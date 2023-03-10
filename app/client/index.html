@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Center</title>
+    <link rel="stylesheet" href="app.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <div id="modal-overflow" class="modal-overflow">
+      <div class="modal-info">
+        <h2>Welcome to the Registration Center !</h2>
+        <b class="please-message"
+          >If this is the first time you visit this site please be patient.
+          &#128578;</b
+        >
+        <p>
+          It will take a while to fully load the entire content of the
+          <b>'Registration Center'</b> and <b>'School of Athens App'</b>.
+        </p>
+        <button type="button" id="modal-button" class="modal-button">ok</button>
+      </div>
+    </div>
+    <div class="up-outer-box">
+      <div class="up-up-inner-box"></div>
+      <div class="middle-up-inner-box"></div>
+      <div class="down-up-inner-box"></div>
+    </div>
+    <div class="canvas">
+      <div class="weather-container">
+        <div class="switch-mode-button-container" switchButtonHandler="false">
+          <div class="cloud">
+            <div class="cloud-left"></div>
+            <div class="cloud-middle"></div>
+            <div class="cloud-right"></div>
+          </div>
+          <button
+            type="button"
+            id="switch-mode-button"
+            class="switch-mode-button"
+          >
+            Switch to <b>Business</b> theme
+          </button>
+        </div>
+        <div class="sun"></div>
+      </div>
+      <div class="buildings-container">
+        <!-- REGISTRATION APPLICATION START -->
+
+        <div class="building">
+          <div class="roof"></div>
+          <div class="application">
+            <h1>Registration center</h1>
+            <div class="registration-wrapper">
+              <div class="registrations">
+                <div class="student-registration">
+                  <h2>Add Student</h2>
+                  <div class="form-wrapper">
+                    <form action="" id="addStudent_Form">
+                      <input type="text" name="name" placeholder="Name" />
+                      <p id="invalid-name" class="validation-error hidden"></p>
+                      <input type="number" name="age" placeholder="Age" />
+                      <p id="invalid-age" class="validation-error hidden"></p>
+                      <select
+                        name="student-school-list"
+                        id="student-school-list"
+                      >
+                        <!-- OPTIONS -->
+                        <!-- OPTIONS -->
+                        <!-- OPTIONS -->
+                      </select>
+                      <p
+                        id="invalid-school"
+                        class="validation-error hidden"
+                      ></p>
+                      <button type="submit" id="add-student">
+                        Add Student
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <div class="webhook-registration">
+                  <h2>Add webhook to School</h2>
+                  <div class="forms-container">
+                    <!-- FORM -->
+                    <!-- OPTION-CHECKBOX -->
+                    <!-- OPTION-CHECKBOX -->
+                    <!-- OPTION-CHECKBOX -->
+                    <!-- BUTTON -->
+                    <!-- /FORM -->
+                  </div>
+                  <div class="note">
+                    Webhook: Whenever a student is being registered to a school
+                    a message is being sent to the specific school.
+                  </div>
+                </div>
+              </div>
+              <div class="response-wrapper">
+                <h2>DataBase Response</h2>
+                <div class="database-response">
+                  <div class="response-content">
+                    No action has been taken yet.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCHOOL APPLICATION START -->
+
+        <div class="building">
+          <div class="roof"></div>
+          <div class="application">
+            <h1>School of Athens App</h1>
+            <div class="loading-container">
+              <b>Application Status:&nbsp;</b>
+              <span>Loading</span>
+              <div class="loading-animation">
+                <div class="lds-spinner">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="results-wrapper">
+              <div class="results">
+                <div class="school-list-wrapper">
+                  <div class="schools-ul-wrapper"></div>
+                  <!-- SCHOOLS -->
+                  <!-- SCHOOLS -->
+                  <!-- SCHOOLS -->
+                  <!-- SCHOOLS -->
+                </div>
+                <div class="note note-school">
+                  The "School of Athens App" is an individual Web Application that is live on the Web. 
+                  When "School of Athens App" receives a notification via "Webhook" of a student's registration 
+                  it sends a response via "Socket.IO" to our browser in order to visualize data on school's Email Inbox.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="down-outer-box">
+      <div class="up-down-inner-box"></div>
+      <div class="middle-down-inner-box"></div>
+      <div class="down-down-inner-box"></div>
+    </div>
+  </body>
+</html>
