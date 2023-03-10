@@ -1,14 +1,12 @@
 ## Table of contents
 
----
-
 - [General info](#general-info)
 - [Technologies](#technologies)
+- [Prerequisites](#prerequisites)
 - [Setup](#setup)
+- [Possible errors](#possible-errors)
 
 ## General info:
-
----
 
 As a junior Front-End Web Developer my purpose for creating this project was to work and learn more for Back End Technologies.
 
@@ -26,8 +24,6 @@ This project consists of two individual Web Applications, the "Registration Cent
 
 ## Technologies:
 
----
-
 - HTML
 - CSS
 - JavaScript
@@ -36,21 +32,12 @@ This project consists of two individual Web Applications, the "Registration Cent
 - MongoDB
 - Socket.IO
 
+## Prerequisites:
+
+- NodeJS
+- MongoDB
+
 ## Setup:
-
-app\server\service\WebSocket.js
-line 9
-cors: {
-origin: [`http://127.0.0.1:${client_Port}`],
-},
-
-app\server\server.js
-line 31
-new DatabaseConnection(
-process.env.MONGO_URI || "mongodb://127.0.0.1:27017/student_data"
-);
-
----
 
 ```
 On Terminal:
@@ -66,3 +53,30 @@ On Terminal:
 9. npm run dev
 
 ```
+
+## Possible errors:
+
+- If this error occurs:
+
+  "Access to XMLHttpRequest at 'http://localhost:3200/socket.io/?EIO=4&transport=polling&t=ORCRIAH' from origin 'http://localhost:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+
+  try to fix it by changing "127.0.0.1" to "localhost":
+
+  - on file "app\server\service\WebSocket.js"
+  - on "line 9
+  - on "cors: {origin: [`http://127.0.0.1:${client_Port}`]
+    }"
+
+- If this error occurs:
+
+  "School.js:62 Uncaught (in promise) Error: TypeError: Failed to fetch
+  at School.get_Schools_And_Students (School.js:62:13)
+  at async showSchools (index.js:32:33)"
+
+  ...probably Mongoose failed to connect.
+
+  Try to fix it by changing "localhost" to "127.0.0.1":
+
+  - on "file app\server\server.js"
+  - on "line 31"
+  - on "new DatabaseConnection(process.env.MONGO_URI || "mongodb://127.0.0.1:27017/student_data");"
