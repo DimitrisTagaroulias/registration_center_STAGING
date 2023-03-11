@@ -4,6 +4,7 @@ import { School } from "./classes/School/School.js";
 import { colorResponse } from "./helpers/makeResponseBoxGreen.js";
 import { setSwitchModeButtonHandler } from "./switch-mode/setSwitchModeButtonHandler.js";
 import { setMediaQueries, mqHandler } from "./media-queries/setMediaQueries.js";
+import "@fontsource/roboto";
 
 const switchModeButtonCloudContainer = document.querySelector(
   ".switch-mode-button-container"

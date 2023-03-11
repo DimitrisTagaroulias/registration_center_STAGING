@@ -239,17 +239,23 @@ class School extends Fetch {
       <div class="table-container-wrapper ${
         businessTheme ? "table-container-wrapper-business" : ""
       }">
-        <div class="table-header">
+        <div class="table-header ${
+          businessTheme ? "table-header-business" : ""
+        }">
           <div class="td-Id ${businessTheme ? "td-Id-business" : ""}">Id</div>
           <div class="td-Name ${
             businessTheme ? "td-Name-business" : ""
           }">Name</div>
-          <div class="td-Age">Age</div>
+          <div class="td-Age ${
+            businessTheme ? "td-Id-Age-business" : ""
+          }">Age</div>
         </div> 
         <div class="table-container">
           
 
-          <table class="student-list">
+          <table class="student-list ${
+            businessTheme ? "student-list-business" : ""
+          }">
           
             <tbody>
                 ${studentsMarkup}
