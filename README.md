@@ -22,6 +22,8 @@ This project consists of two individual Web Applications, the "Registration Cent
 
    - it sends a response to our server and our server sends a "notification" via "Socket.IO" to our browser in order to visualize data on school's Email Inbox.
 
+Live version URL: https://registration-center.vercel.app
+
 ## Technologies:
 
 - HTML
