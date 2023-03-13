@@ -6,7 +6,7 @@
 - [Setup](#setup)
 - [Possible errors](#possible-errors)
 
-## General info:
+## General info
 
 Description:
    - This project consists of two individual Web Applications, the "Registration Center" and the "School of Athens App".
@@ -27,7 +27,7 @@ Purpose:
 Live version URL:
    - https://registration-center.vercel.app
 
-## Technologies:
+## Technologies
 
 - HTML
 - CSS
@@ -37,12 +37,12 @@ Live version URL:
 - Socket.IO
 - MongoDB
 
-## Prerequisites:
+## Prerequisites
 
 - NodeJS
 - MongoDB
 
-## Setup:
+## Setup
 
 ```
 On Terminal:
@@ -59,7 +59,7 @@ On Terminal:
 
 ```
 
-## Possible errors:
+## Possible errors
 
 - If this error occurs:
 
