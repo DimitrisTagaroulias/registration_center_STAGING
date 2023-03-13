@@ -8,7 +8,7 @@
 
 ## General info:
 
-As a junior Front-End Web Developer my purpose for creating this project was to work and learn more about Back End Technologies.
+As a junior Front-End Web Developer, my purpose in creating this project was to practice Back-End technologies and improve my skills.
 
 This project consists of two individual Web Applications, the "Registration Center" and the "School of Athens App".
 
