@@ -31,8 +31,8 @@ Live version URL: https://registration-center.vercel.app
 - JavaScript
 - NodeJS
 - ExpressJS
-- MongoDB
 - Socket.IO
+- MongoDB
 
 ## Prerequisites:
 
