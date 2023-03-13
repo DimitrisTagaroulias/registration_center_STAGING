@@ -8,21 +8,24 @@
 
 ## General info:
 
-As a junior Front-End Web Developer, my purpose in creating this project was to practice Back-End technologies and improve my skills.
+Description:
+   - This project consists of two individual Web Applications, the "Registration Center" and the "School of Athens App".
+   
+   1. On the "Registration Center" the user can:
 
-This project consists of two individual Web Applications, the "Registration Center" and the "School of Athens App".
+      - register a student to a school(on a live DataBase).
+      - select if he wants the school to receive a notification.
 
-1. On the "Registration Center" the user can:
+   2. The "School of Athens App" is an individual Web Application that is live on the Web.
+      When "School of Athens App" receives a notification via "Webhook" of a student's registration:
 
-   - register a student to a school(on a live DataBase).
-   - select if he wants the school to receive a notification.
+      - it sends a response to our server and our server sends a "notification" via "Socket.IO" to our browser in order to visualize data on school's Email Inbox.
+   
+Purpose:
+   - As a junior Front-End Web Developer, my purpose in creating this project was to practice Back-End technologies and improve my skills.
 
-2. The "School of Athens App" is an individual Web Application that is live on the Web.
-   When "School of Athens App" receives a notification via "Webhook" of a student's registration:
-
-   - it sends a response to our server and our server sends a "notification" via "Socket.IO" to our browser in order to visualize data on school's Email Inbox.
-
-Live version URL: https://registration-center.vercel.app
+Live version URL:
+   - https://registration-center.vercel.app
 
 ## Technologies:
 
